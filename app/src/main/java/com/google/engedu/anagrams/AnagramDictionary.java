@@ -21,7 +21,7 @@ public class AnagramDictionary {
     private static final int MAX_WORD_LENGTH = 7;
     private Random random = new Random();
     private HashSet<String> wordSet;
-    private HashMap<String, ArrayList> lettersToWord;
+    protected HashMap<String, ArrayList> lettersToWord;
     private HashMap<Integer, ArrayList> sizeToWords;
     private int wordLength;
 
@@ -109,7 +109,7 @@ public class AnagramDictionary {
 
     /****Helper Functions***/
 
-    private String sortLetters(String word) {
+    protected String sortLetters(String word) {
 
         char[] temp = word.toCharArray();
         Arrays.sort(temp);

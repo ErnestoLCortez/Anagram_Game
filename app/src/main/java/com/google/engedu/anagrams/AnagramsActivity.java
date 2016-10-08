@@ -40,7 +40,7 @@ public class AnagramsActivity extends AppCompatActivity {
         AssetManager assetManager = getAssets();
         try {
             InputStream inputStream = assetManager.open("words.txt");
-            dictionary = new AnagramDictionary(inputStream);
+            dictionary = new AnagramDictionaryTwoLetter(inputStream);
         } catch (IOException e) {
             Toast toast = Toast.makeText(this, "Could not load dictionary", Toast.LENGTH_LONG);
             toast.show();
